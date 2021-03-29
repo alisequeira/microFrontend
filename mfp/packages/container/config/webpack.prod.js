@@ -23,3 +23,4 @@ const prodConfig = {
 };
 
 module.exports = merge(commonConfig, prodConfig);
+//just a test
