@@ -10,6 +10,8 @@ const prodConfig = {
   output: {
     filename:
       "[name].[contenthash].js" /* all different files that are build are going to use this as a template to figure out how to name them*/,
+    publicPath:
+      "/container/latest" /* this option is gonna be used any time you have some some part of webpack that tries to refer to a file that has been build by webpack */,
   },
   plugins: [
     new ModuleFederationPlugin({
